@@ -1,62 +1,83 @@
-# Balochi Potli
+# RANG KARAVAN — Luxury Pakistani Bags
 
-Small static web project demonstrating a simple page with images and client-side scripting.
+A modern and elegant static storefront for Pakistani artisan bags, built with plain HTML, CSS, and JavaScript.
+
+## Project description
+
+This project showcases a premium bag collection inspired by Pakistani craftsmanship. It features a polished landing page with:
+
+- a responsive hero section with animated visuals
+- a curated product collection with category filtering
+- mobile-friendly navigation and overlay menu
+- rich product cards, badges, and interactive actions
+- SVG-generated bag illustrations and inline image assets
+
+The design celebrates traditional craftsmanship and modern e-commerce styling.
+
+## How it is built
+
+This site is built from scratch as a static front-end application using:
+
+- `index.html` — page structure, hero section, collections, about, testimonials, and contact anchor sections
+- `style.css` — responsive layout, typography, animations, dark luxury palette, mobile menu, and cards
+- `script.js` — dynamic UI behavior, product rendering, category filtering, mobile menu interactions, and image resolution logic
+- `images.js` — embedded image assets and data URI declarations for bag preview images
+
+No bundler, build tool, or server-side code is required. The app runs entirely in the browser.
+
+## Key features
+
+- Responsive layout with desktop and mobile navigation
+- Product filtering by category (All, Potli, Clutch, Crossbody)
+- SVG bag illustrations for crafted product types
+- Lazy-loaded product image assets using data URIs
+- Hero animation, marquee banner, and toggled mobile overlay
+- Shop-like product grid with price labels and badges
 
 ## Project structure
 
-- `index.html` — main page and entry point
-- `style.css` — styles for layout and presentation
-- `script.js` — interactive behavior
-- `images.js` — image data or image-related helper code
+- `index.html` — main application markup
+- `style.css` — styling and responsive behavior
+- `script.js` — UI logic and dynamic rendering
+- `images.js` — embedded images for product cards
+- `model.jpg` — hero/about section image asset (if present)
 
-## Description
+## Run locally
 
-This repository contains a lightweight static site titled "Balochi Potli." It is intended for learning and demonstration purposes. The UI loads images from `images.js` and applies styles from `style.css`. No build step or server is required.
-
-## Task 2 (Areeba Tariq)
-
-This branch `task-2-AreebaTariq` should contain the Task 2 deliverable. Current contents are the project files and this README. If you want a specific implementation for Task 2 (feature, bugfix, or enhancement), describe it here and I will add the changes.
-
-Example Task 2 ideas you might request:
-- Add an image gallery with captions
-- Implement responsive layout and mobile navigation
-- Add form to collect visitor feedback
-
-## How to run locally
-
-1. Open the project folder in File Explorer.
-2. Double-click `index.html` or open it in any browser.
-
-No web server is required. To preview with a local server (optional):
+Open `index.html` in a browser to view the site. For a local development preview, you can use a simple web server:
 
 ```powershell
-# using Python 3
 cd "C:\Users\User\Documents\bag"
 python -m http.server 8000
-# then open http://localhost:8000 in your browser
 ```
 
-## Git / push instructions
+Then open:
 
-To push this project to GitHub on branch `task-2-AreebaTariq`, run these commands in PowerShell from the project folder:
+```text
+http://localhost:8000
+```
+
+## Git and deployment
+
+The project branch is `task-2-AreebaTariq` and the repository URL is:
+
+https://github.com/areeba20044-cmyk/Task-2-AreebaTariq
+
+If you need to push again locally, run:
 
 ```powershell
 cd "C:\Users\User\Documents\bag"
-git init
-git checkout -b task-2-AreebaTariq
 git add .
-git commit -m "Initial project import + Task 2"
-git remote remove origin 2>$null
-git remote add origin https://github.com/areeba20044-cmyk/Task-2-AreebaTariq
-git push -u origin task-2-AreebaTariq
+git commit -m "Update README and push full project"
+git push origin task-2-AreebaTariq
 ```
 
-If you prefer I push from here, provide a GitHub Personal Access Token (PAT) with `repo` scope and confirm consent; I will create/overwrite the `task-2-AreebaTariq` branch.
+## Notes
+
+This repository is ready for static hosting on GitHub Pages or any static site host. No build or installation step is required beyond serving the files.
 
 ## Author
 
 Areeba Tariq
 
----
 
-If you'd like a tailored Task 2 implementation, tell me the requirements and I'll add the code and update this README accordingly.
